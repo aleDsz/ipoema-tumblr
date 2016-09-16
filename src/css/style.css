@@ -20,13 +20,48 @@ h3 {
 	height: 100vh;
 }
 
-.ui.secondary.inverted.segment {
-	background: #2D4059;
+.ui.text.inverted.segment {
+	background: #2B2E4A;
 }
 
-.ui.last.inverted.segment {
-	background: #2B2E4A;
-	height: 100vh;
+.ui.link.inverted.segment {
+	background: #53354A;
+}
+
+.ui.photo.inverted.segment {
+	background: #3D3551;
+}
+
+.ui.photoset.inverted.segment {
+	background: #393E46;
+}
+
+.ui.quote.inverted.segment {
+	background: #145374;
+}
+
+.ui.chat.inverted.segment {
+	background: #544D7E;
+}
+
+.ui.video.inverted.segment {
+	background: #39627F;
+}
+
+.ui.audio.inverted.segment {
+	background: #5E9387;
+}
+
+.ui.comments,
+.ui.list {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+}
+
+.ui.comments > .comment.white {
+	color: #000;
+	border-bottom: 1px #f3f3f3 solid;
 }
 
 .ui.primary.buttons .button,

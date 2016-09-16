@@ -19895,6 +19895,7 @@ ol.ui.horizontal.list li:before,
          Colored
 -----------------------*/
 
+.ui.grid > .row > .white.column,
 .ui.grid > .row > .red.column,
 .ui.grid > .row > .orange.column,
 .ui.grid > .row > .yellow.column,
@@ -19912,6 +19913,15 @@ ol.ui.horizontal.list li:before,
   margin-bottom: -1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+/* White */
+
+.ui.grid > .white.row,
+.ui.grid > .white.column,
+.ui.grid > .row > .white.column {
+  background-color: #FFF !important;
+  color: #000;
 }
 
 /* Red */
