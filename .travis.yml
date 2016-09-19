@@ -5,6 +5,7 @@ install:
   - 'npm install npm'
   - 'npm install -g grunt-cli'
   - 'npm install'
+  - 'npm run-script compile'
 
 script:
   - 'npm test'
