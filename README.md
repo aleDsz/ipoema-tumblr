@@ -1,4 +1,4 @@
-# ipoema-tumblr
+# ipoema-tumblr [![Build Status](https://travis-ci.org/aleDsz/ipoema-tumblr.svg?branch=master)](https://travis-ci.org/aleDsz/ipoema-tumblr)
 
 A theme created to specific user of tumblr: [iPoema](http://ipoema.tumblr.com/). This tumblr was created to posts poems from Alexandre de Souza.
 
