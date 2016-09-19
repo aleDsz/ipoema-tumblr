@@ -1,31 +1,34 @@
 {
-	"name": "ipoema-tumblr",
-	"version": "1.0.0",
-	"description": "iPoema's Tumblr Theme",
-	"scripts": {
-		"start": "http-server ./src -o",
-		"test": "grunt test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/aledsz/ipoema-tumblr.git"
-	},
-	"keywords": [
-		"tumblr"
-	],
-	"author": "Alexandre de Souza <alexandre@aledsz.com.br>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/aledsz/ipoema-tumblr/issues"
-	},
-	"homepage": "https://github.com/aledsz/ipoema-tumblr#readme",
-	"dependencies": {
-		"http-server": "^0.9.0"
-	},
-	"devDependencies": {
-		"grunt": ">=0.4.0 <1.0.0",
-		"grunt-contrib-jshint": "^1.0.0",
-		"grunt-html-test": "^0.1.6",
-		"grunt-js-test": "^1.5.12"
-	}
+  "name": "ipoema-tumblr",
+  "version": "1.0.0",
+  "description": "iPoema's Tumblr Theme",
+  "scripts": {
+    "start": "http-server ./src -o",
+    "test": "grunt test",
+    "compile": "node compile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aledsz/ipoema-tumblr.git"
+  },
+  "keywords": [
+    "tumblr"
+  ],
+  "author": "Alexandre de Souza <alexandre@aledsz.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aledsz/ipoema-tumblr/issues"
+  },
+  "homepage": "https://github.com/aledsz/ipoema-tumblr#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.6",
+    "grunt": ">=0.4.0 <1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-html-test": "^0.1.6",
+    "grunt-js-test": "^1.5.12",
+    "tumblr-theme-parser": "^1.0.0"
+  }
 }

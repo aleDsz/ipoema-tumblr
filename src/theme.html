@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{Title}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="{Favicon}">
 	<link rel="alternate" type="application/rss+xml" href="{RSS}">
-	{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
-	<script src="https://raw.githubusercontent.com/aleDsz/ipoema-tumblr/master/src/lib/jquery.js"></script>
-	<script src="https://raw.githubusercontent.com/aleDsz/ipoema-tumblr/master/src/lib/semantic.js"></script>
-	<link rel="stylesheet" href="https://raw.githubusercontent.com/aleDsz/ipoema-tumblr/master/src/css/semantic.css">
-	<link rel="stylesheet" href="https://raw.githubusercontent.com/aleDsz/ipoema-tumblr/master/src/css/style.css">
+	<script src="http://static.tumblr.com/e4ggjcb/xiwodl55q/jquery.js"></script>
+	<link rel="stylesheet" href="http://static.tumblr.com/e4ggjcb/P4Sodn2s4/semantic.css">
+	<link rel="stylesheet" href="http://static.tumblr.com/e4ggjcb/KFLodl5w1/style.css">
+	<script type="text/javascript" src="http://static.tumblr.com/e4ggjcb/opbodn237/icons.eot"></script>
 </head>
 <body>
 	<div class="pusher">
@@ -36,210 +36,40 @@
 			{block:Posts}
 
 				{block:Text}
-					<div class="post text">
-						<div class="ui text inverted vertical masthead center aligned segment">
+					<div class="ui text inverted vertical masthead center aligned segment">
 	
-							<div class="ui text container">
-								{block:Title}<h1 class="ui inverted header"><a href="{Permalink}">{Title}</a></h1>{/block:Title}
-								{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-								<h4>{Body}</h4>
-								<h3 class="ui super-h2">
-									{block:HasTags}
-									<p>
-										<b>Tags: </b>
-										{block:Tags}<a class="ui blue label" href="{TagURL}">{Tag}</a>{/block:Tags}
-									</p>
-									{/block:HasTags}
-								</h3>
-							</div>
-	
+						<div class="ui text container">
+							{block:Title}<h1 class="ui inverted header"><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
+							<h4>{Body}</h4>
+							<h3 class="ui super-h2">
+								<p>
+									{block:HasTags}{block:Tags}<a class="ui blue label" href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}
+									<a class="ui red label">{NoteCount} {lang:Notes}</a>
+								</p>
+								{block:PostNotes}{PostNotes}{/block:PostNotes}
+							</h3>
 						</div>
+	
 					</div>
 				{/block:Text}
 
-				<div class="post link">
-					<div class="ui link inverted vertical masthead center aligned segment">
-	
-						<div class="ui text container">
-							<h1 class="ui inverted header"><a href="http://ipoema.tumblr.com/" target="_blank">iPoema's blog</a></h1>
-							<p>Checkout my new blog</p>
-							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-							<h3 class="ui super-h2"><p><b>Tags: </b><a class="ui blue label" href="/tagged/Alexandre-de-Souza">Alexandre de Souza</a></p></h3>
-						</div>
-	
-					</div>
-				</div>
-
-				<div class="post photo">
-					<div class="ui photo inverted vertical masthead center aligned segment">
-	
-						<div class="ui text container">
-							<h1 class="ui inverted header"><img class="ui fluid image" src="http://67.media.tumblr.com/cb7236d142d44da146025e97d08bb40c/tumblr_nc5x3oVSvm1qzkuk6o1_1280.jpg" /></h1>
-							<p>Apple Macbook</p>
-							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-							<h3 class="ui super-h2"><p><b>Tags: </b><a class="ui blue label" href="/tagged/Alexandre-de-Souza">Alexandre de Souza</a></p></h3>
-						</div>
-	
-					</div>
-				</div>
-
-				<div class="post photoset">
-					<div class="ui photoset inverted vertical masthead center aligned segment">
-	
-						<div class="ui text container">
-							<h1 class="ui inverted header">
-								<img class="ui fluid image" src="http://67.media.tumblr.com/c0a530ed351955802278749a891d2c3b/tumblr_nrfyg3ylWs1sbdbsho1_500.jpg" />
-								<img class="ui fluid image" src="http://67.media.tumblr.com/2bf60a3617c176db1b98a02bc15d1380/tumblr_nrfyg3ylWs1sbdbsho2_500.jpg" />
-							</h1>
-							<p>When angels cry</p>
-							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-							<h3 class="ui super-h2"><p><b>Tags: </b><a class="ui blue label" href="/tagged/Alexandre-de-Souza">Alexandre de Souza</a></p></h3>
-						</div>
-	
-					</div>
-				</div>
-
-				<div class="post quote">
-					<div class="ui quote inverted vertical masthead center aligned segment">
-	
-						<div class="ui text container">
-							<h1 class="ui inverted header">“Eu escrevo o que sinto, sinto muito.”</h1>
-							<p>— Prazer, caos (via <a class="ui unlink" href="http://delator.tumblr.com/" target="_blank">delator</a>)</p>
-							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-							<h3 class="ui super-h2"><p><b>Tags: </b><a class="ui blue label" href="/tagged/Alexandre-de-Souza">Alexandre de Souza</a></p></h3>
-						</div>
-	
-					</div>
-				</div>
-				
-				<div class="post chat">
-					<div class="ui chat inverted vertical masthead segment">
-	
-						<div class="ui text container">
-							<h1 class="ui inverted header">WhatsApp</h1>
-							<p>
-								<div class="ui comments">
-
-									<div class="comment white">
-										<a class="avatar"><img src="http://xade.zz.mu/files/1h0ak07ok2mqil4zyp6l.ico"></a>
-										<div class="content">
-											<a class="author">iPoema</a>
-											<div class="metadata"><span class="date">Hoje às 17:42</span></div>
-											<div class="text">91234-5678</div>
-										</div>
-									</div>
-								
-									<div class="comment white">
-										<a class="avatar"><img src="http://xade.zz.mu/files/1h0ak07ok2mqil4zyp6l.ico"></a>
-										<div class="content">
-											<a class="author">iPoema</a>
-											<div class="metadata"><span class="date">Hoje às 17:42</span></div>
-											<div class="text">91234-5678</div>
-										</div>
-									</div>
-
-									<div class="comment white">
-										<a class="avatar"><img src="http://xade.zz.mu/files/1h0ak07ok2mqil4zyp6l.ico"></a>
-										<div class="content">
-											<a class="author">iPoema</a>
-											<div class="metadata"><span class="date">Hoje às 17:42</span></div>
-											<div class="text">91234-5678</div>
-										</div>
-									</div>
-
-									<form class="ui reply form">
-										<div class="field"><textarea></textarea></div>
-										<div class="ui blue button">Responder</div>
-									</form>
-
-								</div>
-							</p>
-							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-							<h3 class="ui super-h2"><p><b>Tags: </b><a class="ui blue label" href="/tagged/Alexandre-de-Souza">Alexandre de Souza</a></p></h3>
-						</div>
-	
-					</div>
-				</div>
-
-				<div class="post video">
-					<div class="ui video inverted vertical masthead center aligned segment">
-	
-						<div class="ui text container">
-							<h1 class="ui inverted header">
-								<iframe
-									src='https://www.tumblr.com/video/cutepetclub/150475952663/700/'
-									style='display:block;background-color:transparent;overflow:hidden'
-									class='embed_iframe tumblr_video_iframe'
-									scrolling='no'
-									frameBorder='0'
-									data-can-gutter
-									data-can-resize
-									data-width='700'
-									data-height='875'
-									width='700'
-									height='875'
-									allowfullscreen
-									mozallowfullscreen
-									webkitallowfullscreen>
-								</iframe>
-							</h1>
-							<p>Cat :3</p>
-							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-							<h3 class="ui super-h2"><p><b>Tags: </b><a class="ui blue label" href="/tagged/Alexandre-de-Souza">Alexandre de Souza</a></p></h3>
-						</div>
-	
-					</div>
-				</div>
-
-				<div class="post audio">
-					<div class="ui audio inverted vertical masthead center aligned segment">
-	
-						<div class="ui text container">
-							<h1 class="ui inverted header">
-								<iframe
-		  							class="tumblr_audio_player tumblr_audio_player_150459300446"
-									src="http://willyumfarquarson.tumblr.com/post/150459300446/audio_player_iframe/willyumfarquarson/tumblr_odkbk487lp1s9nouq?audio_file=https%3A%2F%2Fwww.tumblr.com%2Faudio_file%2Fwillyumfarquarson%2F150459300446%2Ftumblr_odkbk487lp1s9nouq&color=white&simple=1"
-									frameborder="0"
-									allowtransparency="true"
-									scrolling="no"
-									width="400"
-									height="95">
-								</iframe>
-							</h1>
-							<p>
-								<div class="ui relaxed divided left aligned container list">
-									
-									<div class="item">
-										<div class="content">
-											<a class="header">Song</a>
-											<div class="description">Final Song (MØ cover)</div>
-										</div>
-									</div>
-
-									<div class="item">
-										<div class="content">
-											<a class="header">Artist</a>
-											<div class="description">Bastille</div>
-										</div>
-									</div>
-
-									<div class="item">
-										<div class="content">
-											<a class="header">Album</a>
-											<div class="description">&nbsp;</div>
-										</div>
-									</div>
-
-								</div>
-							</p>
-							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-							<h3 class="ui super-h2"><p><b>Tags: </b><a class="ui blue label" href="/tagged/Alexandre-de-Souza">Alexandre de Souza</a></p></h3>
-						</div>
-	
-					</div>
-				</div>
-
 			{/block:Posts}
+
+			{block:Pagination}
+				<div class="ui primary inverted vertical masthead center aligned segment">
+	
+					<div class="ui text container">
+						<h1 class="ui inverted header">{Title}</h1>
+						<h3 class="super-h2">
+							{block:PreviousPage}<a href="{PreviousPage}"><- Página anterior</a>{/block:PreviousPage}
+							/ {CurrentPage} /
+							{block:NextPage}<a href="{NextPage}">Próxima página -></a>{/block:NextPage}
+						</h3>
+					</div>
+	
+				</div>
+			{/block:Pagination}
 
 		</div>
 

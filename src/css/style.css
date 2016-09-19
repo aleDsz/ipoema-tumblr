@@ -4,12 +4,20 @@
 	height: 100%;
 }
 
+.ui.inverted.header > a {
+	color: #E84545;
+}
+
 h3 {
 	font-weight: normal;
 }
 
 .ui.super-h2 {
 	margin-bottom: 192px;
+}
+
+ol.notes > li {
+	list-style-type: none;
 }
 
 /**
@@ -112,12 +120,6 @@ h3 {
 .right.menu > .button {
 	border: none;
 	line-height: 30px;
-}
-
-.grid-alpha {
-	border-radius: 1em;
-	background: rgba(27, 28, 29, 0.2);
-	position: relative;
 }
 
 .ui.vertical.divider.white {

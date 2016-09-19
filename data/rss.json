@@ -1,0 +1,51 @@
+{
+	"Title": "iPoema",
+	"Description": "Residência de obras de poetas amadores.",
+	"RSS": "http://ipoema.tumblr.com/rss",
+	"Favicon": "http://67.media.tumblr.com/avatar_c789fbf24cde_128.png",
+	"block:Posts":
+	[ 
+		{
+			"block:Body": true,
+			"block:Title": true,
+			"block:HasTags": true,
+			"block:Tags": true,
+			"block:Date": true,
+			"notecount": 0,
+			"lang:notes": "Notas",
+			"Permalink": "http://ipoema.tumblr.com/post/150436945801/poema-para-ela",
+			"Title": "Poema para ela",
+			"PostType": "text",
+			"DayOfMonthWithZero": "15",
+			"MonthNumberWithZero": "09",
+			"Year": "2016",
+			"24HourWithZero": "04",
+			"Minutes": "13",
+			"Seconds": "59",
+			"Body": "<p>\u00c9 incr\u00edvel como voc\u00ea<br>\nainda me faz me sentir assim<br>\nbobo, apaixonado, sem sentido<br>\ne vivo arrependido<br>\nde n\u00e3o ter tido <br>\noutra oportunidade <br>\nde te amar, te beijar e cuidar<br>\ndessa mo\u00e7a bonita<br>\nque voc\u00ea \u00e9<\/p>\n\n<p>voc\u00ea ainda me faz ter o cora\u00e7\u00e3o apertado <br>\nsentir ci\u00fames sem sentido nenhum<br>\nainda me faz ter vontade de levantar<br>\ne ir, para longe e parar ai<br>\nao seu lado, pelo menos sei<br>\nque seria mais feliz<br>\ndo que estar aqui e arrasado<br>\ncom a vida e com todos<br>\nmas eu fui tolo em ter terminado<\/p>\n\n<p>agora sinto falta<br>\nsinto saudades<br>\nminh'alma querendo a sua<br>\npara dan\u00e7ar na chuva<br>\naquela nossa m\u00fasica <br>\nouvir lana, sentir a plena paz<br>\na alegria que tu me tr\u00e1s <br>\nagora \u00e9 uma dor incur\u00e1vel<br>\nconstante sofrimento que<br>\nmere\u00e7o pelo que fui<br>\npelo que fiz<br>\ne pelo o que eu n\u00e3o fiz por ti<br>\npor mim<br>\npor n\u00f3s <br>\ne agora estou s\u00f3 <br>\nnessa terr\u00edvel escurid\u00e3o que a vida me colocou<\/p>\n\n<p>socorro, eu preciso do teu abra\u00e7o<br>\no que j\u00e1 foi meu amor, meu bem<br>\nhoje n\u00e3o sei nem<br>\nse posso te chamar pra conversar<br>\nBeatriz \u00e9 o seu nome<br>\nque ainda me d\u00f3i para falar\u2026.<\/p>",
+			"Tag": "Alexandre de Souza",
+			"TagURL": "http://ipoema.tumblr.com/tagged/Alexandre-de-Souza"
+		},
+		{
+			"block:Body": true,
+			"block:Title": true,
+			"block:HasTags": true,
+			"block:Tags": true,
+			"block:Date": true,
+			"notecount": 1,
+			"lang:notes": "Notas",
+			"Permalink": "http://ipoema.tumblr.com/post/149926395026/a-story-of-a-horrible-day",
+			"Title": "A story of a horrible day",
+			"PostType": "text",
+			"DayOfMonthWithZero": "04",
+			"MonthNumberWithZero": "09",
+			"Year": "2016",
+			"24HourWithZero": "08",
+			"Minutes": "18",
+			"Seconds": "59",
+			"Body": "<p>Today she\u2019s 16<br>she\u2019s still smiling<br>and i can\u2019t take it<br>I keep crying<br>and you don\u2019t know it<br>I remember those days<br>that I was happy with you<br>now I\u2019m sad without you<\/p><p>my day is boring<br>my life is boring<br>everything becomes boring without love<br>and I\u2019m still need you<br>your hugs, your lips<br>you\u2026<\/p><p>I\u2019m scared<br>my life doesn\u2019t make no sense, no more<br>this poem also<br>my lips without their<br>this can\u2019t be a mistake<\/p><p>I can\u2019t smile today<br>but I can tomorrow<br>if this day you come to me<br>to be happy again.<\/p>",
+			"Tag": "Alexandre de Souza",
+			"TagURL": "http://ipoema.tumblr.com/tagged/Alexandre-de-Souza"
+		}
+	]
+}
