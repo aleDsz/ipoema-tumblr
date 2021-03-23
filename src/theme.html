@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>{Title}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="{Favicon}">
-	<link rel="alternate" type="application/rss+xml" href="{RSS}">
-	<script src="http://static.tumblr.com/e4ggjcb/xiwodl55q/jquery.js"></script>
-	<link rel="stylesheet" href="http://static.tumblr.com/e4ggjcb/P4Sodn2s4/semantic.css">
-	<link rel="stylesheet" href="http://static.tumblr.com/e4ggjcb/KFLodl5w1/style.css">
-	<script type="text/javascript" src="http://static.tumblr.com/e4ggjcb/opbodn237/icons.eot"></script>
+  <meta charset="UTF-8">
+  <title>{Title}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}">
+  <script src="http://static.tumblr.com/e4ggjcb/xiwodl55q/jquery.js"></script>
+  <script type="text/javascript" src="http://static.tumblr.com/e4ggjcb/ZEfodrnvq/semantic.js"></script>
+  <link rel="stylesheet" href="http://static.tumblr.com/e4ggjcb/P4Sodn2s4/semantic.css">
+  <link rel="stylesheet" href="http://static.tumblr.com/e4ggjcb/22Lodrnv3/style.css">
 </head>
+<style>
+  .ui.body.post > h1 {
+    color: #E84545;
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+  }
+</style>
 <body>
-	<div class="pusher">
-
-		<div class="ui primary inverted vertical masthead center aligned segment">
-			<div class="ui container" id="inicio">
-				<div class="ui large secondary inverted pointing menu">
-					<a class="toc item">{Title}</a>
-					<a href="/" class="item">Início</a>
-					<a href="/ask" class="item">Ask</a>
-					<a href="/rss" class="item">RSS</a>
-				</div>
-			</div>
-
-			<div class="ui text container">
-				<h1 class="ui inverted header">{Title}</h1>
-				<h3 id="description">{Description}</h3>
-			</div>
-
-		</div>
-
-		<div id="content" role="main">
-
-			{block:Posts}
-
-				{block:Text}
-					<div class="ui text inverted vertical masthead center aligned segment">
-	
-						<div class="ui text container">
-							{block:Title}<h1 class="ui inverted header"><a href="{Permalink}">{Title}</a></h1>{/block:Title}
-							{block:Date}<p>{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}</p>{/block:Date}
-							<h4>{Body}</h4>
-							<h3 class="ui super-h2">
-								<p>
-									{block:HasTags}{block:Tags}<a class="ui blue label" href="{TagURL}">{Tag}</a>{/block:Tags}{/block:HasTags}
-									<a class="ui red label">{NoteCount} {lang:Notes}</a>
-								</p>
-								{block:PostNotes}{PostNotes}{/block:PostNotes}
-							</h3>
-						</div>
-	
-					</div>
-				{/block:Text}
-
-			{/block:Posts}
-
-			{block:Pagination}
-				<div class="ui primary inverted vertical masthead center aligned segment">
-	
-					<div class="ui text container">
-						<h1 class="ui inverted header">{Title}</h1>
-						<h3 class="super-h2">
-							{block:PreviousPage}<a href="{PreviousPage}"><- Página anterior</a>{/block:PreviousPage}
-							/ {CurrentPage} /
-							{block:NextPage}<a href="{NextPage}">Próxima página -></a>{/block:NextPage}
-						</h3>
-					</div>
-	
-				</div>
-			{/block:Pagination}
-
-		</div>
-
-	</div>
+  <div class="pusher">
+    <div class="ui primary inverted vertical masthead center aligned segment">
+      <div class="ui container" id="inicio">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="toc item">{Title}</a>
+          <a href="/" class="item">Início</a>
+          <a href="/ask" class="item">Ask</a>
+          <a href="/rss" class="item">RSS</a>
+        </div>
+      </div>
+      <div class="ui text container">
+        <h1 class="ui inverted header">{Title}</h1>
+        <h3 id="description">{Description}</h3>
+      </div>
+    </div>
+    <div id="content" role="main">
+      {block:Posts}
+        {block:Text}
+          <div id="{PostID}" class="ui text inverted vertical masthead center aligned segment">
+            <div class="ui text container">
+              {block:Title}
+                <h1 class="ui inverted header">
+                  <a>{Title}</a>
+                </h1>
+              {/block:Title}
+              <div class="ui body post">
+                {Body}
+              </div>
+              <h3 class="ui super-h2">
+                <p>
+                  {block:HasTags}
+                    {block:Tags}
+                      <a class="ui blue label" href="{TagURL}">
+                        {Tag}
+                      </a>
+                    {/block:Tags}
+                  {/block:HasTags}
+                  <a href="{Permalink}" class="ui red label">
+                    {NoteCount} {lang:Notes}
+                  </a>
+                  {block:Date}
+                    <a href="{Permalink}" class="ui green label">
+                      {DayOfMonthWithZero}/{MonthNumberWithZero}/{Year} {24HourWithZero}:{Minutes}:{Seconds}
+                    </a>
+                  {/block:Date}
+                </p>
+              </h3>
+            </div>
+          </div>
+        {/block:Text}
+      {/block:Posts}
+      {block:Pagination}
+        <div class="ui inverted vertical footer center aligned segment">
+          <div class="ui text container">
+            <h3 class="super-h2">
+              {block:PreviousPage}
+                <a href="{PreviousPage}">«</a>
+              {/block:PreviousPage}
+              {CurrentPage}
+              {block:NextPage}
+                <a href="{NextPage}">»</a>
+              {/block:NextPage}
+            </h3>
+          </div>
+        </div>
+      {/block:Pagination}
+    </div>
+  </div>
 </body>
 </html>
